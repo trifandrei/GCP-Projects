@@ -1,0 +1,2 @@
+A process is an active program, a program that is under execution. It is more than the program code as it includes the program counter, process stack, registers, program code . Compared to this, the program code is only the text section.
+A thread is a lightweight process that can be managed independently by a scheduler. It improves the application performance using parallelism. A thread shares information like data segment, code segment, files, with its peer threads while it contains its own registers.

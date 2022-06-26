@@ -1,0 +1,7 @@
+what is AppEngine Flexible Environment?
+
+An App Engine app is a single application resource with one or more services. Each service can be configured to use different runtimes and to operate with different performance settings. A flexible environment runs your application in Docker containers on Compute Engine virtual machines (VMs), which have fewer restrictions. For example, you can use the programming language or library of your choice, write to disk, and even run multiple processes. You also have the choice of Compute Engine machine types for your instances. The flexible environment is optimal for applications with the following characteristics:Source code that is written in a version of any of the supported programming languages.Runs in a Docker container that includes a custom runtime or source code written in other programming languages.Uses or depends on frameworks that include native code.Accesses the resources or services of your Google Cloud project that reside in the Compute Engine network.
+
+what are yaml files?
+
+YAML is a data serialization language that is often used for writing configuration files. Depending on whom you ask, YAML stands for yet another markup language or YAML ain’t markup language, which emphasizes that YAML is for data, not documents. YAML is a popular programming language because it is human-readable and easy to understand. It can also be used in conjunction with other programming languages.

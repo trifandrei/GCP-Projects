@@ -1,0 +1,13 @@
+gcloud sql databases create animal --instance=intancegcp
+
+gcloud sql connect intancegcp --user=root
+CREATE TABLE mammals (id int NOT NULL UNIQUE, category VARCHAR(25),environment VARCHAR(20),weight float, years int );
+
+
+insert into mammals (id,category,environment,weight,years) values (1,"carnivorus","desert",34.1,8);
+insert into mammals (id,category,environment,weight,years) values (2,"carnivorus","mountain",12.1,23);
+insert into mammals (id,category,environment,weight,years) values (3,"carnivorus","mountain",54.1,11);
+insert into mammals (id,category,environment,weight,years) values (4,"carnivorus","mountain",112.1,45);
+insert into mammals (id,category,environment,weight,years) values (5,"carnivorus","mountain",115.1,21);
+
+select * from mammals order by weight desc;

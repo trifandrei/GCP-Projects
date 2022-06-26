@@ -1,0 +1,3 @@
+export PROJECT_ID="day00-327305"
+
+echo $PROJECT_ID

@@ -1,0 +1,3 @@
+what are the most important elements of a relational database?
+
+Relational databases are based on the relational model. The relational model is a group of rules set forth by E. F. Codd based on mathematical principles (relational algebra), and it defines how database management systems should function. The basic structures of a relational database (as defined by the relational model) are tables, columns (or fields), rows (or records), and keys.

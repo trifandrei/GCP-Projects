@@ -1,0 +1,3 @@
+gcloud sql instances create intancegcp
+gcloud sql databases create professional_db --instance=intancegcp
+gcloud sql databases create my_db1 --instance=intancegcp

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    </head>
+    <body>
+        <h1>The input element</h1>
+        {% if login == False %}
+        {% block content %}
+
+            <form method="POST">
+            <label for="fname">Username:</label>
+            <input type="text" id="fname" name="user"><br><br>
+            <label for="lname">Password:</label>
+            <input type="password" id="lname" name="pass"><br><br>
+            <input type="submit" value="Submit">
+            </form>
+        {% endblock content %}
+        {% else %}
+            {% block content2 %}
+            <form action="/admin/add">
+            <input type="submit" value="Add Museum">
+            </form>
+            <form action="/admin/edit">
+            <input type="submit" value="Edit Museum">
+            </form>
+            <form action="/admin/delete">
+            <input type="submit" value="Delete Museum">
+            </form>
+            <form action="/admin/logout">
+            <input type="submit" value="Logout">
+            </form>
+            {% endblock content2 %}
+        {% endif %}
+
+    </body>
+</html>

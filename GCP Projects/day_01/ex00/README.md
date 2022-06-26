@@ -1,0 +1,1 @@
+Scopul principal al mediilor virtuale Python este de a crea un mediu izolat pentru proiectele Python. Aceasta înseamnă că fiecare proiect poate avea propriile dependențe, indiferent de ce dependențe au celelalte proiecte.

@@ -1,0 +1,7 @@
+resource.type="http_load_balancer" resource.labels.forwarding_rule_name="frontnd1" resource.labels.url_map_name="loadb1"
+
+resource.type="http_load_balancer" resource.labels.forwarding_rule_name="frontnd1" resource.labels.url_map_name="loadb1"
+severity=INFO
+
+resource.type="http_load_balancer" resource.labels.forwarding_rule_name="frontnd1" resource.labels.url_map_name="loadb1"
+severity=WARNING

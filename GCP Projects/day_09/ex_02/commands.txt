@@ -1,0 +1,27 @@
+
+
+gcloud sql connect intancegcp --user=root
+
+create database querries_ex;
+
+CREATE TABLE cities (id int NOT NULL UNIQUE, name VARCHAR(25),population VARCHAR(20),safety_rating float);
+CREATE TABLE properties (id int NOT NULL,name varchar(50),price float,city_fk int ,PRIMARY KEY (id),FOREIGN KEY (city_fk) REFERENCES cities(id));
+
+insert into cities (id,name,population,safety_rating) values (1,"New York","320",92.1);
+insert into cities (id,name,population,safety_rating) values (2,"Hong-Kong","3110",52.1);
+
+insert into properties (id,name,price,city_fk) values (1,"prop1",312.0,1);
+insert into properties (id,name,price,city_fk) values (2,"prop2",4534.0,1);
+insert into properties (id,name,price,city_fk) values (3,"prop3",44.0,1);
+insert into properties (id,name,price,city_fk) values (4,"prop4",414.0,1);
+insert into properties (id,name,price,city_fk) values (5,"prop5",1414.0,1);
+
+insert into properties (id,name,price,city_fk) values (6,"prop6",1415.0,2);
+insert into properties (id,name,price,city_fk) values (7,"prop7",15.0,2);
+insert into properties (id,name,price,city_fk) values (8,"prop8",1534.0,2);
+insert into properties (id,name,price,city_fk) values (9,"prop9",1534.0,2);
+
+select a.name from properties as a join cities as b on (a.city_fk=b.id and b.name="New York");
+select name from properties order by price desc limit 3;
+select name from properties order by price asc limit 5;
+select b.name, COUNT(a.name) as nr_properties from properties as a join cities as b on (a.city_fk=b.id) group by b.name;

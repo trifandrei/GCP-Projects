@@ -1,0 +1,1 @@
+Compute Engine is a computing and hosting service that lets you create and run virtual machines on Google infrastructure. Compute Engine offers scale, performance, and value that lets you easily launch large compute clusters on Google's infrastructure.  VMs can be launched from the standard images or custom images created by users.

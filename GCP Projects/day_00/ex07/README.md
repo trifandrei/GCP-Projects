@@ -1,0 +1,2 @@
+Metoda HTTP HEAD solicită anteturile care ar fi returnate dacă adresa URL a cererii HEAD a fost solicitată în schimb cu metoda HTTP GET.
+ X-Powered-By "este un antet de răspuns HTTP . Este adesea inclus în mod implicit în răspunsurile construite printr-o anumită tehnologie de scripting . Acesta poate fi manipulat de server. Astfel unele servere au ales să nu o includă sau chiar să furnizeze informații înșelătoare pentru a elimina hackerii care ar putea viza o anumită tehnologie.

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    </head>
+    <body>
+        <h1>The input element</h1>
+
+        <form method="POST">
+        <select name="museum" id="museum">
+            {%for i in range(0, len)%}
+                <option  value="{{value[i]['id']}}">{{value[i]['name']}}</option>
+            {%endfor%}
+        </select>
+        <label for="lname">Name:</label>
+        <input type="text" id="lname" name="name"><br><br>
+
+        <label for="lname">Start_time:</label>
+        <input type="time" min="08:00" max="22:00" id="lname" name="start_time"><br>
+
+        <label for="lname">Stop_time:</label>
+        <input type="time" min="08:00" max="22:00" name="stop_time"><br>
+
+        <label for="lname">Date:</label>
+        <input type="date" name="date"><br>
+
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

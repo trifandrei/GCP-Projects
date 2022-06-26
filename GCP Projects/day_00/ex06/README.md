@@ -1,0 +1,1 @@
+ curl este un instrument de linie de comandă pentru a transfera date către sau de la un server. Acesta poate utiliza multe protocoalele. crul este un instrument care este preferat pentru automatizare, deoarece este conceput pentru a funcționa fără interacțiunea utilizatorului. curl poate transfera mai multe fișiere simultan.

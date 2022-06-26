@@ -1,0 +1,5 @@
+what are the differences between Big Query and Datastore?
+
+Datastore is designed to support transactional workloads, such as the backend for a web application. It's optimized for small transactions that read or write a limited number of rows per operation, with strong consistency guarantees.Datastore is a NoSQL document database built for automatic scaling, high performance, and ease of application development.
+
+BigQuery is designed for analytic workloads. It's append-only, and it's optimized for queries that scan/filter/aggregate entire tables of data to get answers out of from data.BigQuery is an enterprise data warehouse for large amounts of relational structured data. It is optimized for large-scale, ad-hoc SQL-based analysis and reporting, which makes it best suited for gaining organizational insights.

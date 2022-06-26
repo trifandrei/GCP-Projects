@@ -1,0 +1,5 @@
+print ("Again, I rely on words")
+print ("\tThere is no miusic to break out of enyone's bone")
+print ("\t\tNor does the soul have in itself the peace proper to  the happy hours")
+print ("\tNor the strong friend close to sad and great ideas.")
+print ("    And neither is an omniscient old fox")
